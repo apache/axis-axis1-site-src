@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "./dtd/document-v12.dtd">
+<document> 
+  <header> 
+    <title>WebServices - Axis</title> 
+  </header> 
+  <body> 
+    <section>
+      <title>WebServices - Axis - Summary of Apache/Microsoft Interoperability Meeting</title>
+<p>
+Summary of Apache/Microsoft Interoperability Meeting<br/>
+March 12-14, 2001
+</p>
+<p>
+From Apache: Glen Daniels, Jim Stearns, Doug Davis<br/>
+From MS: (main contacts) Keith Ballinger, Andrew Layman, Eric Andrae
+</p>
+<p>
+Most of the 3 days were spent testing Apache SOAP v2.1 and Axis against
+the 5 different versions of SOAP MS has (one being an IE client).
+Since Axis doesn't have serialization support yet (just Strings) it
+was limited in what it could do, but for those simple tests that
+did NOOPs or tested Strings it did ok as a client and a server (just
+a few minor tweaks were needed).
+</p>
+<p>
+Apache SOAP v2.1 did much better.  There were a few bugs (and holes)
+that were discovered but Glen was able to track them down and, I think,
+fix all of them.  He's in the process of trying to see if the
+fixes can be integrated back into the cvs tree, but is unsure about
+one of the fix's impact on the MIME support - but we'll see.
+</p>
+<p>
+MS has 5 different versions of SOAP and they've been doing some of
+their own interoperability testing internally so I think they were
+able to flush out most(all) of their differences before we got there.
+However, we did manage to find a bug (or two?) in their code 8-)
+but overall they had things pretty well covered.
+</p>
+<p>
+For better or worse, MS is very WSDL dependent. If the industry is
+headed down the path of basically requiring WSDL then Apache might
+need to do so as well.
+</p>
+<p>
+We had two strategy meetings in which we discussed how to improve
+interoperability testing/conformance in the future, not just between
+Apache and MS but everyone.  We decided to set-up a consortium in
+which different SOAP implementations can join and test their version
+of SOAP against the others in the group.  The main purpose of the
+group would be to focus attention on interoperability issues and not
+necessarily prove conformance to the SOAP spec.  While we will have
+testcases that we "believe" test some aspects of conformance we can
+not be the defining authority on who is, or is not, spec compliant.
+All we can do is pretty much help people say that their SOAP code
+can, or can not, play nicely with others in the group.  That being
+said, there are some definite MUSTs and MUST NOTs in the spec and
+we will have some tests that test those so we'll be walking a fine
+line.
+</p>
+<p>
+We will also group tests based on sections of the SOAP spec.  Not
+everyone will want to implement all sections of the spec but will
+still want to test conformance based on what they have implemented.
+</p>
+<p>
+To help this "consortium" we're going to set-up a web site
+(Jim has already reserved wsinterop.org and soapinterop.org) where
+people can post their testcases and test results.  We also talked about
+having pointers to "live" servers that people can hit to test their
+SOAP implementations.  It wasn't decided how Apache will work this.
+<br/><b>****TODO*****</b><br/>
+We need to get someone to volunteer to set this up/host it.
+</p>
+<p>
+Along the lines of getting interoperability, we discussed showcasing
+how nicely we're all playing together.  8-)  In particular we
+discussed having a live demo at a conference (maybe NetWorld Interop
+in May) where people can hook up their machines in our network of
+computers and join in "the game".  "The game" will consist of a fairly
+simple maze type of game - each server will own a certain number of
+rooms and clients will be able to walk from room to room examining,
+and placing, objects in each one.  We'll define a set of base SOAP 
+interfaces that people will need to implement and if they do then
+they should be able hook-in their server and extend the maze.
+</p>
+<p>
+Glen is working on the write-up of the overall idea and will
+distribute it once it's done.  In order to help things along we
+agreed to try to have another F2F around the end of April where we
+will all get together in a room to hash-out the details of the
+game/interfaces and to actually code it up.  I (Dug) have agreed to
+see if IBM will host it in Raleigh.  Glen is going to see if 
+Allaire (aka Macromedia) will be willing to work on the GUI that
+the main-server will use to display the status of the game.
+</p>
+    </section>
+  </body>
+</document>

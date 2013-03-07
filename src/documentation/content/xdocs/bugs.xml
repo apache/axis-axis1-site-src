@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "./dtd/document-v12.dtd">
+<document>
+  <header>
+    <title>WebServices - Axis</title>
+  </header>
+  <body>
+
+<a name="Bugs"/>
+<section>
+<title>WebServices - Axis - </title>
+
+<p>New Axis bugs should be reported using <a href="http://issues.apache.org/jira">JIRA</a> (the Apache bug database).</p>
+
+<ul>
+  <li>Please report bugs against the newest release.</li>
+
+  <li>If you're not sure whether the behavior in question is a bug or a feature, please post a message to the <a href="mailto:axis-dev@ws.apache.org">axis-dev</a> mailing list for clarification.</li>
+
+  <li>To avoid duplicate bug reports, please query JIRA to see whether the bug has already been reported (and perhaps fixed).</li>
+
+  <li>If you can't find your bug in the database, it would help if you could check out Axis from SVN, and build it locally to verify that the bug still exists.</li>
+
+  <li>If you have found a new bug, please enter an Axis bug report in JIRA. Remember to include the following information:
+
+    <ul>
+      <li>Version number of Axis</li>
+
+      <li>Version number of JDK (enter "java -fullversion")</li>
+
+      <li>Instructions for how to reproduce the problem, ideally including a small testcase.</li>
+    </ul>
+
+    <p><i>Before you can enter your first bug report, you must submit your email address to JIRA and receive a password.</i></p>
+  </li>
+</ul>
+
+<p>Bugs related to WSDL4J should be addressed to the Expert Group for JSR110 at <a href="http://groups.yahoo.com/group/jsr110-eg-disc">http://groups.yahoo.com/group/jsr110-eg-disc</a>.</p>
+
+<p>For more information visit the following links:</p>
+<ul>
+  <li><a href="http://issues.apache.org/jira/">Apache JIRA</a></li>
+</ul>
+
+<p>We also encourage you to write patches for problems you find and submit them to the <a href="mailto:axis-dev@ws.apache.org">axis-dev</a> mailing
+list. If we agree the problem is a bug and the patch fixes it and does not break something else, we are likely to include the patch in the next release.</p>
+
+</section>
+
+  </body>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "./dtd/document-v12.dtd">
+<document>
+  <header>
+    <title>WebServices - Axis</title>
+  </header>
+  <body>
+
+<a name="News"/>
+<section>
+<title>News</title>
+
+<p>NEWS (April 22, 2006): Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_4">1.4 Final</a> is now available!</p>
+<p>NEWS (October 5, 2005): Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_3">1.3 Final</a> is now available!</p>
+<p>NEWS (June 15, 2005): Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2_1">1.2.1 Final</a> is now available!</p>
+<p>NEWS (May 04, 2005): Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2">1.2 Final</a> is now available!</p>
+<p>NEWS (April 09, 2005): Axis C++ <a href="http://ws.apache.org/axis/cpp/download.html">1.5 Final</a> is now available!</p>
+<p>NEWS (March 01, 2005): Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2RC3">1.2 RC3</a> is now available!</p>
+<p>NEWS (February 08, 2005): Axis C++ <a href="http://ws.apache.org/axis/cpp/download.html">1.5 Alpha</a> is now available!</p>
+<p>NEWS (December 16, 2004): Axis C++ <a href="http://ws.apache.org/axis/cpp/download.html">1.4 Final</a> is now available!</p>
+<p>NEWS (December 03, 2004): Axis C++ <a href="http://ws.apache.org/axis/cpp/download.html">1.4 Alpha</a> is now available!</p>
+<p>NEWS (November 16, 2004): Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2RC2/">1.2 RC2</a> is now available!</p>
+<p>NEWS (October 29, 2004): Axis C++ <a href="http://ws.apache.org/axis/cpp/download.html">1.3 Final</a> is now available!</p>
+<p>NEWS (September 30, 2004): Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2RC1/">1.2 RC1</a> is now available!</p>
+<p>NEWS (September 15, 2004): Axis C++ <a href="http://ws.apache.org/axis/cpp/download.html">1.3 Beta</a> is now available!</p>
+
+<hr/>
+
+Other news at the Apache Software Foundation is here:
+<UL>
+<LI><a href="http://www.apachenews.org/">The Apache News Blog Online</a></LI>
+<LI><a href="http://www.apachenews.org/archives/cat_apache_webservices_index.html">
+Web services related news on the Apache News Blog Online</a></LI>
+</UL>
+
+</section>
+<a name="Introduction"/>
+<section>
+<title>Introduction</title>
+
+<p>Apache Axis is an implementation of the SOAP ("Simple Object Access Protocol") <a href="http://www.w3.org/TR/SOAP">submission</a>
+to W3C.</p>
+
+<p>From the draft W3C specification:
+  <blockquote>SOAP is a lightweight protocol for exchanging structured information in a decentralized, distributed environment. 
+              It is an XML based protocol that consists of three parts: an envelope that defines a framework for describing what is in a message and how to process it, a set of encoding rules for expressing instances of application-defined datatypes, and a convention for representing remote procedure calls and responses.</blockquote>
+</p>
+
+<p>This project is a follow-on to the <a href="http://ws.apache.org/soap">Apache SOAP project</a>.</p>
+
+<p>Please see the <a href="ref.html">Reference Library</a> for a list of technical resources that should prove useful.</p>
+
+</section>
+
+<a name="Axis1.2AndBeyond"/>
+<section>
+<title>Axis 1.2 and beyond</title>
+
+<p>Axis 1.1 has proven itself to be a reliable and stable base on which to implement Java Web services.  
+   There is a very active <a href="http://ws.apache.org/axis/mail.html">user community</a> and there are
+   many companies who use Axis for Web services support in their products.</p>
+
+<p>For Axis 1.2, we are focusing on our document/literal support to better address the <a href="http://www.ws-i.org/Profiles/BasicProfile-1.0.html">WS-I Basic Profile 1.0</a> and <a href="http://java.sun.com/xml/downloads/jaxrpc.html">JAX-RPC 1.1</a> specifications. And we are fixing as many bug as possible.</p>
+
+<p>We can always use <b>your</b> help. Here are some links to help you help us:
+  <ul>
+    <li><a href="http://ws.apache.org/axis/bugs.html">How do I report bugs?</a></li>
+    <li><a href="http://wiki.apache.org/ws/SubmitPatches">How do I submit patches to Axis?</a></li>
+  </ul>
+</p>
+
+</section>
+
+<a name="Credits"/>
+<section>
+<title>Credits</title>
+
+<p>The Axis Development Team</p>
+
+</section>
+
+  </body>
+</document>

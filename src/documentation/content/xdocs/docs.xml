@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "./dtd/document-v12.dtd">
+<document>
+  <header>
+    <title>WebServices - Axis</title>
+  </header>
+  <body>
+
+<a name="MiscNotes"/>
+<section>
+<title>WebServices - Axis - Misc Notes</title>
+
+<p>Misc notes and docs that might be of interest...</p>
+
+<ul>
+  <li> Notes from the 1st Face-2-Face</li>
+  <li><a href="docs/F2F-2.html">Notes from the 2nd Face-2-Face</a></li>
+  <li><a href="docs/ms-interop.html">Notes from the Interop meeting with Microsoft</a></li>
+  <li><a href="docs/SOAPVerse.html">Glen's note about SOAPVerse</a></li>
+  <li><a href="docs/CachingEarlDraft2.html">Toshi's note about Caching Mechanism</a></li>
+  <li><a href="java/soapmonitor-user-guide.html">SOAPMonitor User's Guide</a> [for nightly build]</li>
+  <li><a href="http://ws.apache.org/~toshi/jp-site/axis/index.html">Axis site in Japanese</a> [translation]</li>
+</ul>
+
+  </section>
+
+  </body>
+</document>

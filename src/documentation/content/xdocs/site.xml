@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<!--
+Forrest site.xml
+
+This file contains an outline of the site's information content.  It is used to:
+- Generate the website menus (though these can be overridden - see docs)
+- Provide semantic, location-independent aliases for internal 'site:' URIs, eg
+<link href="site:changes"> links to changes.html (or ../changes.html if in
+  subdir).
+- Provide aliases for external URLs in the external-refs section.  Eg, <link
+  href="ext:cocoon"> links to http://xml.apache.org/cocoon/ 
+
+See http://xml.apache.org/forrest/linking.html for more info
+-->
+
+<site label="Axis" href="" xmlns="http://apache.org/forrest/linkmap/1.0" tab="">
+<Axis label="Axis">
+ <introduction label="Introduction" href="index.html"/>
+ <news label="News" href="news.html"/>
+<!-- <faq label="FAQ" href="faq.html"/>-->
+ <wiki label="FAQ/Wiki" href="http://wiki.apache.org/ws/FrontPage/Axis"/>
+ <getinvolved label="Get Involved">
+  <overview label="Overview" href="overview.html"/>
+  <cvs label="SVN Repository" href="cvs.html"/>
+  <mailinglist label="Mailing Lists" href="mail.html"/>
+  <library label="Reference Library" href="ref.html" target="body"/>
+  <bugs label="Bugs" href="bugs.html"/>
+  <buildsite label="HowToBuildSite" href="howtobuild.html"/>
+ </getinvolved>
+ <axisjava label="Axis (Java)">  
+  <documentation label="Documentation" href="java/index.html"/>
+  <!--<download label="Download" href="java/download.html"/>-->
+  <releases label="Releases" href="java/releases.html"/>
+  <installation label="Installation" href="java/install.html"/>
+  <users label="User's Guide" href="java/user-guide.html"/>
+  <developers label="Developer's Guide" href="java/developers-guide.html"/>
+  <integration label="Integration Guide" href="java/integration-guide.html"/>
+  <architecture label="Architecture Guide" href="java/architecture-guide.html"/>
+  <reference label="Reference Guide" href="java/reference.html"/>
+  <read label="Reading Guide" href="java/reading.html"/>
+  <requirements label="Requirements" href="java/requirements.html"/>
+ </axisjava>
+ <axiscpp label="Axis C++">
+  <axisc label="Home" href="http://ws.apache.org/axis/cpp/index.html"/>
+  <documentation label="Documentation" href="http://ws.apache.org/axis/cpp/documentation.html"/>
+  <download label="Download" href="http://ws.apache.org/axis/cpp/download.html"/>
+  <wiki label="Wiki Pages" href="http://wiki.apache.org/ws/FrontPage/AxisCPP"/>
+  <who label="Who we are" href="http://ws.apache.org/axis/cpp/who.html"/>
+ </axiscpp>
+<downloads label="Downloads">
+  <interim label="Interim Drops" href="interim.html"/>
+  <sourcecode label="Source Code" href="http://svn.apache.org/viewcvs.cgi/webservices/axis/trunk/"/>
+</downloads>
+<translation label="Translation">
+  <releases label="Japanese" href="http://ws.apache.org/axis/ja/index.html"/>
+</translation>
+<related label="Related Projects">
+  <wsif label="WSIF" href="http://ws.apache.org/wsif/"/>
+  <juddi label="jUDDI" href="http://ws.apache.org/juddi/"/>
+  <wsdl4j label="WSDL4J" href="http://wsdl4j.sourceforge.net"/>
+  <uddi4j label="UDDI4J" href="http://www.uddi4j.org/"/>
+</related>
+<misc label="Misc">
+  <who label="Who we are" href="who.html"/>
+  <contact label="Contact" href="contact.html"/>
+  <legal label="Legal" href="legal.html"/>
+  <notes label="Notes/Docs" href="docs.html"/>
+</misc>
+
+</Axis>
+
+  <external-refs>
+    <xml.apache.org href="http://xml.apache.org/">
+      <forrest href="forrest/">
+        <validation href="validation.html"/>
+        <webapp href="your-project.html#webapp"/>
+        <document-v11 href="document-v11.html"/>
+      </forrest>
+      <cocoon href="cocoon/"/>
+      <mori href="http://jakarta.terra-intl.com" />
+    </xml.apache.org>
+  </external-refs>
+
+</site>

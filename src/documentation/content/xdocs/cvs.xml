@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "./dtd/document-v12.dtd">
+<document>
+  <header>
+    <title>WebServices - Axis</title>
+  </header>
+  <body>
+
+<a name="SVNRepositories"/>
+<section>
+<title>WebServices - Axis - SVN Repositories</title>
+
+<p>Most users of the source code probably don't need to have day to day access to the source code as it changes. For these users we provide easy to unpack source code downloads via our <a href="http://ws.apache.org/axis/java/releases.html">download pages</a>.</p>
+
+<p><b>View the Source Tree</b></p>
+
+<p>Latest SVN sources can be viewed at <a href="http://svn.apache.org/viewcvs/webservices/axis/trunk/java/">http://svn.apache.org/viewcvs/webservices/axis/trunk/java/</a></p>
+
+<p><b>Access the Source Tree </b></p>
+
+<p>So, you've decided that you need access to the source tree to see the latest and greatest code. There's two different forms of SVN access. The first is anonymous and anybody can use it. The second is not and you must have a login to the development server. If you don't know what this means, join the <a href="mail.html">mailing list</a> and find out.</p>
+
+<p>Anyone can checkout source code from our SVN server. To do so, simply use the following commands (if you are using a GUI SVN client, configure it appropriately):</p>
+
+<blockquote>
+  <table width="90%">
+    <tr bgcolor="#F2C0F6">
+      <td>
+        <source>svn co http://svn.apache.org/repos/asf/webservices/axis/trunk/java axis</source>
+      </td>
+    </tr>
+  </table>
+</blockquote>
+
+<p><b>Full Remote SVN Access</b></p>
+
+<p>If you are a <i>Committer</i> and have a login on the Apache development server, this section is for you. If you are not a Committer, but you want to submit patches or even request commit privileges, please see the <a href="http://jakarta.apache.org/site/guidelines.html">Jakarta GuideLines</a> page (we follow the same rules) for more information.</p>
+
+<p>Please browse the relevant pages on our Infrastructure site:</p>
+
+<ul>
+  <li><a href="http://www.apache.org/dev/#svn">http://www.apache.org/dev/#svn</a></li>
+</ul>
+
+</section>
+
+  </body>
+</document>

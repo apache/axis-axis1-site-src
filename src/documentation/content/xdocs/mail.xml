@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "./dtd/document-v12.dtd">
+<document>
+  <header>
+    <title>WebServices - Axis</title>
+  </header>
+  <body>
+
+<a name="MailingList"/>
+<section>
+<title>Mailing List</title>
+
+<p><b>Before subscribing to any of the mailing lists, please make sure you have read and understand the <a href="mailguide.html">guidelines</a>.</b></p>
+
+<p>While the mailing lists are not archived on Apache they are available at other sites, for example <a href="http://marc.theaimsgroup.com">http://marc.theaimsgroup.com</a> is pretty good and is used for searching below.</p>
+
+</section>
+
+<a name="TheAxisUserList"/>
+<section>
+<title>The Axis User List</title>
+
+<p>
+<b>Medium Traffic</b>
+<a href="mailto:axis-user-subscribe@ws.apache.org">Subscribe</a>
+<a href="mailto:axis-user-unsubscribe@ws.apache.org">Unsubscribe</a>
+<a href="mailto:axis-user-digest-subscribe@ws.apache.org">Subscribe(Digest)</a>
+<a href="mailto:axis-user-digest-unsubscribe@ws.apache.org">Unsubscribe(Digest)</a>
+<a href="mailto:axis-user@ws.apache.org">Send mail to list</a>
+<br/>
+This list is for developers that are using Axis in their own projects to 
+ask questions, share knowledge, and discuss issues related to using Axis.
+<br/>
+<form action="http://marc.theaimsgroup.com/" method="get">
+  <input type="hidden" name="l" value="axis-user"/>
+  <input type="hidden" name="w" value="2"/>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr><td align="left">
+      <input type="hidden" name="r" value="1"/>Search: <input type="text" name="s" value="" size="25" maxlength="40"/><input type="submit" value="Search"/><input type="reset" value="Reset"/><br/>[<input type="radio" name="q" value="t"/>] Subjects [<input type="radio" name="q" value="a"/>] Authors [<input type="radio" name="q" value="b"/>] Bodies for list 'axis-user'
+    </td></tr>
+  </table>
+</form>
+</p>
+
+</section>
+
+<a name="TheAxisDeveloperList"/>
+<section>
+<title>The Axis Developer List</title>
+<p>
+<b>Medium Traffic</b>
+<a href="mailto:axis-dev-subscribe@ws.apache.org">Subscribe</a>
+<a href="mailto:axis-dev-unsubscribe@ws.apache.org">Unsubscribe</a>
+<a href="mailto:axis-dev-digest-subscribe@ws.apache.org">Subscribe(Digest)</a>
+<a href="mailto:axis-dev-digest-unsubscribe@ws.apache.org">Unsubscribe(Digest)</a>
+<a href="mailto:axis-dev@ws.apache.org">Send mail to list</a>
+<br/>
+This is the list where participating developers of the Axis project meet 
+and discuss issues, code changes/additions, etc. 
+<form action="http://marc.theaimsgroup.com/" method="get">
+  <input type="hidden" name="l" value="axis-dev"/>
+  <input type="hidden" name="w" value="2"/>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr><td align="left">
+      <input type="hidden" name="r" value="1"/>Search: <input type="text" name="s" value="" size="25" maxlength="40"/><input type="submit" value="Search"/><input type="reset" value="Reset"/><br/>[<input type="radio" name="q" value="t"/>] Subjects [<input type="radio" name="q" value="a"/>] Authors [<input type="radio" name="q" value="b"/>] Bodies for list 'axis-dev'
+    </td></tr>
+  </table>
+</form>
+</p>
+
+</section>
+
+<a name="TheAxisC++UserList"/>
+<section>
+<title>The Axis C++ User List</title>
+<p>
+<b>Medium Traffic</b>
+<a href="mailto:axis-c-user-subscribe@ws.apache.org">Subscribe</a>
+<a href="mailto:axis-c-user-unsubscribe@ws.apache.org">Unsubscribe</a>
+<a href="mailto:axis-c-user-digest-subscribe@ws.apache.org">Subscribe(Digest)</a>
+<a href="mailto:axis-c-user-digest-unsubscribe@ws.apache.org">Unsubscribe(Digest)</a>
+<a href="mailto:axis-c-user@ws.apache.org">Send mail to list</a>
+<br/>
+This list is for developers that are using Axis C++ in their own projects to 
+ask questions, share knowledge, and discuss issues related to using Axis C++.
+<form action="http://marc.theaimsgroup.com/" method="get">
+  <input type="hidden" name="l" value="axis-c-user"/>
+  <input type="hidden" name="w" value="2"/>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr><td align="left">
+        <input type="hidden" name="r" value="1"/>Search: <input type="text" name="s" value="" size="25" maxlength="40"/><input type="submit" value="Search"/><input type="reset" value="Reset"/><br/>[<input type="radio" name="q" value="t"/>] Subjects [<input type="radio" name="q" value="a"/>] Authors [<input type="radio" name="q" value="b"/>] Bodies for list 'axis-c-user'
+      </td></tr>
+    </table>
+</form>
+</p>
+
+</section>
+
+<a name="TheAxisC++DeveloperList"/>
+<section>
+<title>The Axis C++ Developer List</title>
+<p>
+<b>Medium Traffic</b>
+<a href="mailto:axis-c-dev-subscribe@ws.apache.org">Subscribe</a>
+<a href="mailto:axis-c-dev-unsubscribe@ws.apache.org">Unsubscribe</a>
+<a href="mailto:axis-c-dev-digest-subscribe@ws.apache.org">Subscribe(Digest)</a>
+<a href="mailto:axis-c-dev-digest-unsubscribe@ws.apache.org">Unsubscribe(Digest)</a>
+<a href="mailto:axis-c-dev@ws.apache.org">Send mail to list</a>
+<br/>
+This is the list where participating developers of the Axis C++ project meet 
+and discuss issues, code changes/additions, etc. 
+<form action="http://marc.theaimsgroup.com/" method="get">
+  <input type="hidden" name="l" value="axis-c-dev"/>
+  <input type="hidden" name="w" value="2"/>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr><td align="left">
+        <input type="hidden" name="r" value="1"/>Search: <input type="text" name="s" value="" size="25" maxlength="40"/><input type="submit" value="Search"/><input type="reset" value="Reset"/><br/>[<input type="radio" name="q" value="t"/>] Subjects [<input type="radio" name="q" value="a"/>] Authors [<input type="radio" name="q" value="b"/>] Bodies for list 'axis-c-dev'
+      </td></tr>
+    </table>
+</form>
+</p>
+
+</section>
+
+  </body>
+</document>

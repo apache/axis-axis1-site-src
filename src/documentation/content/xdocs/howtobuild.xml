@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.1//EN" "../dtd/document-v11.dtd">
+
+<document>
+  <header>
+    <title>How To Build Axis Project's Website</title>
+    <authors>
+      <person email="toshi@apache.org" name="Toshiyuki Kimura" />
+    </authors>
+  </header>
+  <body>
+
+<a name="InstallingForrest"/>
+<section>
+<title>Installing Forrest</title>
+
+<p>The Axis website build system requires two components to perform a build.<br/>
+<a href="http://ant.apache.org/">Ant</a> and <a href="http://forrest.apache.org/">Forrest</a>.</p>
+
+<p>Specifically the build has been tested to work with Ant version 1.6.1 and Forrest 0.5.1. To install these products download the distributions and follow the instructions in their documentation.  Make sure you don't forget to set the environment variables FORREST_HOME and ANT_HOME. The ANT_HOME/bin directory should be in the path.</p>
+
+</section>
+
+<a name="CheckingOutWs-axisAndWs-siteModule"/>
+<section>
+<title>Checking out ws-axis and ws-site module</title>
+
+<p>Check out <b>'http://svn.apache.org/repos/asf/webservices/axis/trunk/site/src/java'</b> and <b>'http://svn.apache.org/repos/asf/webservices/axis/site'</b> module via your favorite SVN tools.<br/>
+Please follow the guideline written <a href="site:cvs">here</a>.</p>
+
+</section>
+
+<a name="RunningTheBuild"/>
+<section>
+<title>Running the Build</title>
+
+<p>Here's a list of targets for the ant task. But, what you need to do is just "ant".</p>
+
+<table>
+  <tr>
+    <th>Target</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>clean</td>
+    <td>Erase all build work products (ie, everything in the build directory</td>
+  </tr>
+  <tr>
+    <td>run-forrest</td>
+    <td>Run Forrest with Jetty server to review the target</td>
+  </tr>
+  <tr>
+      <td>run-browser</td>
+      <td>Invoke a web browser (ie, Internet Explorer)</td>
+  </tr>
+  <tr>
+    <td>backcopy</td>
+    <td>Reflect the updates on the build directory to the master source on 'ws-axis/site/src'</td>
+  </tr>
+  <tr>
+    <td>forrest</td>
+    <td>Create the updated static contents</td>
+  </tr>
+  <tr>
+    <td>replace</td>
+    <td>Copy the contents to ws-site/targets/axis directory</td>
+  </tr>
+  <tr>
+    <td>build-site (default)</td>
+    <td>Do clean up and all tasks to the build site</td>
+  </tr>
+</table>
+
+</section>
+
+<a name="ForCommittersHighlyRecommended"/>
+<section>
+<title>For Committers (Highly recommended)</title>
+
+<p>The procedure to make changes to http://ws.apache.org/axis/ is:</p>
+
+<ul>
+  <li>*cd* into the local <b>'ws-axis/site'</b> CVS dir</li>
+  <li>execute <b>"ant"</b></li>
+  <li>make changes to  <b>'build/webapp/content/xdocs'</b></li>
+  <li><b>reload and review the contents</b> with the autostarted browser</li>
+  <li><b>close the browser and the forrest window</b> when you are ready to finish editing the site</li>
+  <li>cvs commit (ie, <b>'ws-axis/site/src'</b> and <b>'ws-site/target/axis'</b>)</li>
+</ul>
+
+</section>
+
+<a name="ManualUpdateIfYouWantToRealizeTheValueOfAntTasksAbove"/>
+<section>
+<title>Manual update (If you want to realize the value of ant tasks above ...)</title>
+
+<p>If you just want to update the site step-by-step, the followings are the instructions.</p>
+
+<ol>
+  <li>Installing Forrest<br/>
+    [Note] At this time, the version 0.5.1 of Forrest is tested version.</li>
+
+  <li>Checking out 'ws-axis/site' module<br/>
+    [ex]<br/>
+    'ws-axis/site/src/documentation/content/xdocs/java/user-guide.ihtml'</li>
+
+  <li>Make changes to the target</li>
+
+  <li>Confirming the change with "forrest run"
+    <ol>
+      <li>cd into the local "ws-axis/site" CVS dir</li>
+      <li>execute "forrest run"</li>
+      <li>have an access to http://localhost:8888/ to see the site</li>
+    </ol>
+  </li>
+
+  <li>Generating a static content with "forrest"
+    <ol>
+      <li>execute "forrest" in the "ws-axis/site" dir</li>
+      <li>check the generated contents in "ws-axis/site/build/site/"</li>
+    </ol>
+  </li>
+
+  <li>Make commitments
+    <ol>
+      <li>commit the original source (xml/ihtml/gif/jpg) to "ws-axis"</li>
+      <li>copy the generated contents into "ws-site/targets/axis"</li>
+      <li>commit the generated contents to "ws-site"</li>
+    </ol>
+  </li>
+
+  <li>(Optional) If you are in a hurry to reflect the change to the site, cd to /www/ws.apache.org, and execute "cvs update -P" on minotaur.
+    <p>[Note] *** VERY IMPORTANT ***<br/>
+      YOU HAVE TO CHECK YOUR UMASK IS "002" BEFORE DOING THE COMMAND, OR THE SITE WILL BECOME A NON-UPDATABLE SITE FROM THEN ON.<br/>
+      The site will be updated automatically twice a day 12 midnight and 12 noon PST by a cron job of dims.</p>
+  </li>
+
+</ol>
+
+</section>
+
+<a name="FAQ"/>
+<section>
+<title>F.A.Q.</title>
+
+<p><i>Q1.</i><br/>
+  I encountered
+  <source>The &lt;xmlcatalog&gt; data type doesn't support the nested &quot;catalogpath&quot; element.</source>
+  error, during the build.</p>
+
+<p><i>A1.</i><br/>
+  Please make sure that your Ant version is later than 1.6 alpha. You can check the Ant version, by running &quot;ant -version&quot;.</p>
+
+<p><i>Q2.</i><br/>
+  I see an error like this regarding mirrors.pdf<br/>
+  <source>[java] X [0]  mirrors.pdf BROKEN ....</source></p>
+
+<p><i>A2.</i><br/>
+  This is a known issue, but does not affect the site itself.</p>
+
+<p><b>( more to be come )</b></p>
+
+</section>
+
+  </body>
+</document>

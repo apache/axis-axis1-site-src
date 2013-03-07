@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    ==================  [AXIS SITE BUILDER]  ==================
+
+    * This is an ant build-file for building whole Axis site.
+    * This version supports only Windows platforms.
+    * You may have to edit the 'IEPath' property below.
+    * The target source you have to edit will be in;
+      'ws-axis/site/src4/java'.
+    * After editing the target, you have to commit a set of
+      updates in 'ws-axis/site/src/java' and
+      'ws-site/target/axis'.
+-->
+
+<project name="BuildSite" default="build-site" basedir=".">
+
+  <property name="version" value="0.1"/>
+  <property name="IEPath" location="C:\Program Files\Internet Explorer"/>
+
+  <description>
+    *=======================================================*
+    |                 Axis Site Builder                     |
+    |                         0.1.0                         |
+    |                                                       |
+    |             $Date$              |
+    *=======================================================*
+  </description>
+
+<!-- ***************************************************************** -->
+<!-- **                                                             ** -->
+<!-- **                  TARGET: build-site                         ** -->
+<!-- **                                                             ** -->
+<!-- ***************************************************************** -->
+  <!-- ===============================================================
+       Main target procedure.
+       =============================================================== -->
+  <target name="build-site" depends="clean">
+    <parallel >
+      <ant target="run-browser"/>
+      <ant target="run-forrest"/>
+    </parallel>
+    <ant target="forrest"/>
+    <ant target="replace"/>
+    <ant target="putmessage"/>
+  </target>
+
+<!-- ***************************************************************** -->
+<!-- **                                                             ** -->
+<!-- **                  TARGET: clean                              ** -->
+<!-- **                                                             ** -->
+<!-- ***************************************************************** -->
+  <target name="clean" description="clean up the build area">
+    <delete dir="./build"/>
+  </target>
+
+<!-- ***************************************************************** -->
+<!-- **                                                             ** -->
+<!-- **                  TARGET: run-browser                        ** -->
+<!-- **                                                             ** -->
+<!-- ***************************************************************** -->
+  <target name="run-browser">
+    <echo message="=> After waiting 15 secs, IE will be comming up ..."/>
+    <sleep seconds="15"/>
+    <echo message="=> A browser (Internet Explorer) is starting up !!"/>
+    <exec executable="${IEPath}\IEXPLORE.EXE">
+      <arg line="http://localhost:8888/"/>
+    </exec>
+  </target>
+
+<!-- ***************************************************************** -->
+<!-- **                                                             ** -->
+<!-- **                  TARGET: run-forrest                        ** -->
+<!-- **                                                             ** -->
+<!-- ***************************************************************** -->
+  <target name="run-forrest">
+    <echo message="=> Starting Forrest with Jetty server ..."/>
+    <exec executable="cmd">
+      <env key="PATH" path="${path}"/>
+      <arg line="/c start forrest run"/>
+    </exec>
+  </target>
+
+<!-- ***************************************************************** -->
+<!-- **                                                             ** -->
+<!-- **                  TARGET: forrest                            ** -->
+<!-- **                                                             ** -->
+<!-- ***************************************************************** -->
+  <target name="forrest">
+    <echo>
+      => Creating static contents with the latest updates ...
+    </echo>
+    <exec executable="cmd">
+      <env key="PATH" path="${path}"/>
+      <arg line="/c forrest"/>
+    </exec>
+    <echo message="=> DONE !!"/>
+    <echo>
+      => Fixing line endings in generated files ...
+    </echo>    
+    <fixcrlf srcdir="build/site" eol="lf" includes="**/*.css, **/*.html, **/*.js, **/*.xsl*" />
+  </target>
+
+<!-- ***************************************************************** -->
+<!-- **                                                             ** -->
+<!-- **                  TARGET: replace                            ** -->
+<!-- **                                                             ** -->
+<!-- ***************************************************************** -->
+  <target name="replace">
+    <echo message="=> Copying the updated (static) contents ..."/>
+    <copy todir="../../../../ws-site/targets/axis">
+      <fileset dir="./build/site">
+        <different targetdir="../../../../ws-site/targets/axis"
+         ignoreFileTimes="true"/>
+      </fileset>
+    </copy>
+    <echo message="=> DONE !!"/>
+  </target>
+
+<!-- ***************************************************************** -->
+<!-- **                                                             ** -->
+<!-- **                  TARGET: putmessage                         ** -->
+<!-- **                                                             ** -->
+<!-- ***************************************************************** -->
+  <target name="putmessage">
+    <echo>
+      (If you are a committer,) please commit your updates in
+      'ws-axis/site/src/java' and 'ws-site/target/axis' !!
+    </echo>
+  </target>
+
+</project>

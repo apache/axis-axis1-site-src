@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "./dtd/document-v12.dtd">
+<document>
+  <header>
+    <title>WebServices - Axis</title>
+  </header>
+  <body>
+
+<a name="News"/>
+<section>
+<title>News</title>
+
+<p>(April 22, 2006) : Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_4/">1.4 Final release</a> is available!</p>
+<p>(October 5, 2006) : Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_3/">1.3 Final release</a> is available!</p>
+<p>(June 15, 2005) : Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2_1/">1.2.1 Final release</a> is available!</p>
+<p>(May 04, 2005) : Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2/">1.2 Final release</a> is available!</p>
+<p>(April 09, 2005) : Axis C++<a href="http://www.apache.org/dist/ws/axis-c/">1.5  Final is available!</a></p>
+<p>(March 01, 2005) : Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2RC3/">1.2 RC3 release</a> is available!</p>
+<p>(February 08, 2005) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.5 Alpha is available!</b></a></p>
+<p>(December 16, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.4 Final is available!</b></a></p>
+<p>(December 03, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.4 Alpha is available!</b></a></p>
+<p>(November 16, 2004) : Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2RC2/">1.2 RC2 release</a> is now available!</p>
+<p>(October 29, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.3 Final is available!</b></a></p>
+<p>(September 30, 2004) : Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2RC1/">1.2 RC1 release</a> is now available!</p>
+<p>(September 15, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.3 Beta is available!</b></a></p>
+<p>(August 18, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.3 Alpha is available!</b></a></p>
+<p>(August 17, 2004) : Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2beta3/">1.2 beta 3 release</a> is now available!</p>
+<p>(July 14, 2004) : Axis <a href="http://www.apache.org/dyn/closer.cgi/ws/axis/1_2beta2/">1.2 beta 2 release</a> is now available!</p>
+<p>(July 09, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.2 is available!</b></a></p>
+<p>(June 29, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.2 Beta is available!</b></a></p>
+<p>(June 15, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.2 Alpha is available!</b></a></p>
+<p>(May 07, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.1.1 is available!</b></a></p>
+<p>(April 16, 2004) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.1 is available!</b></a></p>
+<p>(December 29, 2003) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/"><b>1.0 is released!</b></a></p>
+<p>(December 01, 2003) : Axis <a href="http://archive.apache.org/dist/ws/axis/1_2alpha/">1.2 Alpha</a> is available! </p>
+<p>(December 01, 2003) : Axis C++ <a href="http://www.apache.org/dist/ws/axis-c/">Beta</a> is available! </p>
+<p>(October 31, 2003) : Axis C++ alpha has been released! </p>
+<p>(September 10, 2003) : Axis CVS Repository has moved from xml-axis to <a href="http://cvs.apache.org/viewcvs/ws-axis/">ws-axis</a></p>
+<p>(June 16, 2003) : Axis <a href="http://ws.apache.org/axis/download.cgi">1.1</a> is now available!</p>
+<p>(March 5, 2003) : Axis <a href="http://archive.apache.org/dist/ws/axis/1_1rc2/">1.1 RC2 release</a> is now available!</p>
+<p>(February 9, 2003) : Axis <a href="http://archive.apache.org/dist/ws/axis/1_1RC1/">1.1 RC1 release</a> is now available!</p>
+<p>(October 7, 2002) : Axis <a href="http://archive.apache.org/dist/ws/axis/1_0rc2/">1.0</a> is now available!</p>
+<p>(September 30, 2002) : Axis <a href="http://archive.apache.org/dist/ws/axis/1_0rc2/">1.0 RC2 release</a> is now available!</p>
+<p>(September 6, 2002) : Axis <a href="http://archive.apache.org/dist/ws/axis/1_0rc1/">1.0 RC1 release</a> is now available!</p>
+<p>(July 9, 2002) : The Axis <a href="http://archive.apache.org/dist/ws/axis/beta3/">beta 3 release</a> is available!</p>
+
+<p>See the <a href="mail.html">Mailing Lists</a> for more information.</p>
+
+<p>The Axis Development Team</p>
+
+</section>
+
+  </body>
+</document>
