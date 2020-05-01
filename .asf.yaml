@@ -1,5 +1,11 @@
 notifications:
-    commits:      java-commits@axis.apache.org c-commits@axis.apache.org
-    issues:       java-dev@axis.apache.org c-dev@axis.apache.org
-    pullrequests: java-dev@axis.apache.org c-dev@axis.apache.org
+    commits:
+        - java-commits@axis.apache.org
+        - c-commits@axis.apache.org
+    issues:
+        - java-dev@axis.apache.org
+        - c-dev@axis.apache.org
+    pullrequests:
+        - java-dev@axis.apache.org
+        - c-dev@axis.apache.org
     jira_options: link label link label
